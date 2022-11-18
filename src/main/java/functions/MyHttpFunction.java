@@ -10,10 +10,9 @@ import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.stream.Collectors;
 
-public class HelloWorld implements HttpFunction {
-  private static final Logger LOGGER = LoggerFactory.getLogger(HelloWorld.class);
+public class MyHttpFunction implements HttpFunction {
+  private static final Logger LOGGER = LoggerFactory.getLogger(MyHttpFunction.class);
 
-  // Simple function to return "Hello World"
   @Override
   public void service(HttpRequest request, HttpResponse response)
       throws IOException {

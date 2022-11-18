@@ -30,6 +30,13 @@
             <artifactId>slf4j-jdk14</artifactId>
             <version>1.7.36</version>
         </dependency>
+
+        <!-- Required for Google Cloud-specific POJOs -->
+        <dependency>
+            <groupId>com.google.cloud</groupId>
+            <artifactId>google-cloudevent-types</artifactId>
+            <version>0.3.0</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -48,7 +55,7 @@
                 <artifactId>function-maven-plugin</artifactId>
                 <version>0.10.1</version>
                 <configuration>
-                    <functionTarget>functions.HelloWorld</functionTarget>
+                    <functionTarget>functions.MyHttpFunction</functionTarget>
                 </configuration>
             </plugin>
         </plugins>
